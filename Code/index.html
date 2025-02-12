@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>ARTEx Control Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
+</head>
+<body>
+  <div class="topnav">
+    <h1>ARTEx Control Panel</h1>
+    <h2>Skirt State</h2>
+    <p>Hovercraft Skirt State is Currently: <span id="skirtStatePlaceholder"></span></p>
+    <button id="turnOnButton" class="custom-button" onclick="turnSkirtOn()">Turn On</button>
+    <button id="turnOffButton" class="custom-button" onclick="turnSkirtOff()">Turn Off</button>
+    <h2>Camera</h2>
+    <img id="cameraFeed" alt="Camera Feed">
+    <h2>Data</h2>
+    <div class="content">
+      <div class="cards">
+        <div class="card">
+          <p class="card-title">ACCELEROMETER</p>
+          <p><span class="reading">X: <span id="accX"></span> ms<sup>2</sup></span></p>
+          <p><span class="reading">Y: <span id="accY"></span> ms<sup>2</sup></span></p>
+          <p><span class="reading">Z: <span id="accZ"></span> ms<sup>2</sup></span></p>
+        </div>
+        <div class="card">
+          <p class="card-title">TEMPERATURE</p>
+          <p><span class="reading">Temperature: <span id="temp"></span> &deg;C</span></p>
+          <p class="card-title">PRESSURE</p>
+          <p><span class="reading">Pressure: <span id="pressure"></span> hPa</span></p> 
+          <p class="card-title">Humidity</p>
+          <p><span class="reading">Humidity: <span id="humidity"></span> g.kg<sup>-1</sup></span></p> 
+        </div>       
+        <div class="card">
+          <p class="card-title">OBJECT ORIENTATION</p>
+          <p><span class="reading">Object Orientation: <span id="orientation"></span></span></p>
+          <p class="card-title">3D ANIMATION</p>
+          <button id="reset" onclick="resetPosition(this)">RESET POSITION</button>
+          <button id="resetX" onclick="resetPosition(this)">X</button>
+          <button id="resetY" onclick="resetPosition(this)">Y</button>
+          <button id="resetZ" onclick="resetPosition(this)">Z</button>
+        </div>
+      </div>
+      <div class="cube-content">
+        <div id="3Dcube"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
