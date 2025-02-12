@@ -4,7 +4,7 @@ Final Year Project
 - **Programming Languages:** Embedded C, HTML, JavaScript, CSS
 - **Applications:** Fusion360, Arduino IDE, EasyEDA
 - **Microcontrollers:** ESP32, BMP280, ADXL345, IR Sensor, L9110s
-- **Additional Resources:** [Report](https://github.com/SamuelAkintomide/ARTEx/blob/main/Shortened%20Final%20Year%20Report.pdf), [Code](https://github.com/SamuelAkintomide/ARTEx/tree/main/Code)
+- **Additional Resources:** [Report](https://github.com/SamuelAkintomide/ARTEx/blob/main/Shortened%20Final%20Year%20Report.pdf), [Code](https://github.com/SamuelAkintomide/ARTEx/tree/main/Code), [Images](https://github.com/SamuelAkintomide/ARTEx/tree/main/3Dmodels)
   
 ### Description
 
