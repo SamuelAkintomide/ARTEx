@@ -9,8 +9,8 @@
 #include <Adafruit_BMP280.h>
 #include "SPIFFS.h"
 
-#define ssid "BT-Z3F6JZ"
-#define password "vM7VYrdGcRA4bD"
+#define ssid "******"
+#define password "******"
 
 AsyncWebServer server(80);
 AsyncEventSource events("/events");
